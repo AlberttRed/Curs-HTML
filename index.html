@@ -1,20 +1,52 @@
-<h1>Títol: Curs HTML</h1>
- <!-- COMENTARI -->
+<!DOCTYPE html>
 
 
-<p>Aquest tipus de text es tracta d'un <strong>paràgraf</strong> i es defineix amb l'etiqueta p.</p>
+<html>
+    <head>
+        <title>El títol de la meva pàgina web</title> <!--Títol que es mostra a la pestaña del navegadors i en els resultats dels buscadors, utiltizat pel CEO per situar la nostra pàgina web -->
 
-<ul>
-    <li class="row-style">Item 1</li>
-    <li class="row-style">Item 2</li>
-    <li class="row-style">Item 3</li>
-</ul>
+        <meta charset="utf-8"> <!--Codificació-->
+        <meta name="viewport" content="width=device-width"> <!--Permet configurar l'aspecte i comportament de la web en diferents dispositius-->
+        <meta name="description" content="Aquesta és la descripció de la meva pàgina web"> <!--És la descripció de la web, utiltizada pel CEO i que es mostra, normalment, sota el títol en els resultats del buscador-->
+        <meta name="robots" content="index, follow"> <!--Important per Google i altres buscadors, per informar si ha d'indexar la pàgina o no-->
+        <meta name="theme-color" content="#09f"> <!--Utilitzat per alguns navegadors(Ex: El color de la part superior de Safari)-->
 
+        <link rel="icon" type="image/png" href="images/logos lenguajes.png"> <!--Permet informar el favicon de la nostra web, si no s'informa es busca per defecte el favicon.icon-->
 
-<input type="button">
-<br>
-<input type="datetime-local">
-<br>
-<br>
-<img width="250" src="images/logos lenguajes.png">
+        <!--OPEN GRAPH-->
 
+        <meta property="og:title" content="El títol de la meva pàgina web"> <!--Permet informar el títol que es mostra quan es comparteix la pàgina per rrss (OpenGraph.xyz)-->
+        <meta property="og:description" content="Aquesta és la descripció de la meva pàgina web"> <!--Permet informar la descripció que es mostra quan es comparteix la pàgina per rrss (OpenGraph.xyz)-->
+        <meta property="og:image" content="/images/logos_lenguajes.png"> <!--Permet informar la imatge que es mostra quan es comparteix la pàgina per rrss (OpenGraph.xyz)-->
+
+        <!--CCS-->
+
+        <style>
+            body{
+                background: #438a81;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>Títol: Curs HTML</h1>
+         <!-- COMENTARI -->
+        
+        
+        <p>Aquest tipus de text es tracta d'un <strong>paràgraf</strong> i es defineix amb l'etiqueta p.</p>
+        
+        <ul>
+            <li class="row-style">Item 1</li>
+            <li class="row-style">Item 2</li>
+            <li class="row-style">Item 3</li>
+        </ul>
+        
+        
+        <input type="button">
+        <br>
+        <input type="datetime-local">
+        <br>
+        <br>
+        <img width="250" src="images/logos lenguajes.png">
+    </body>
+</html>    
