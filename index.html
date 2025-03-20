@@ -29,24 +29,35 @@
 
     </head>
     <body>
-        <h1>Títol: Curs HTML</h1>
-         <!-- COMENTARI -->
+        <header>
+            <h1>Títol: Curs HTML</h1>
+             <!-- COMENTARI -->
+        </header>
+        <nav>
+            <a href="#tipos-items">Tipos de Item</a>
+            <a href="#entrada-datos">Registro</a>
+            <a href="https://www.youtube.com" target="_blank" rel="noreferrer">Youtube</a>
+        </nav>
+        <main>    
+            <p>Aquest tipus de text es tracta d'un <strong>paràgraf</strong> i es defineix amb l'etiqueta p.</p>
+        </main>
         
-        
-        <p>Aquest tipus de text es tracta d'un <strong>paràgraf</strong> i es defineix amb l'etiqueta p.</p>
-        
-        <ul>
-            <li class="row-style">Item 1</li>
-            <li class="row-style">Item 2</li>
-            <li class="row-style">Item 3</li>
-        </ul>
-        
-        
-        <input type="button">
-        <br>
-        <input type="datetime-local">
-        <br>
-        <br>
-        <img width="250" src="images/logos lenguajes.png">
+        <aside id="tipos-items">
+            <ul>
+                <li class="row-style">Item 1</li>
+                <li class="row-style">Item 2</li>
+                <li class="row-style">Item 3</li>
+            </ul>
+        </aside>
+
+        <section id="entrada-datos">
+            <input type="date">
+            <br>
+            <br>
+            <input type="button" value="Aceptar">
+            <br>
+            <br>
+            <img width="250" src="images/logos lenguajes.png">
+        </section>
     </body>
 </html>    
