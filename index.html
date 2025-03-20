@@ -3,7 +3,7 @@
 
 <html>
     <head>
-        <title>El títol de la meva pàgina web</title> <!--Títol que es mostra a la pestaña del navegadors i en els resultats dels buscadors, utiltizat pel CEO per situar la nostra pàgina web -->
+        <title>The Kop Noticias</title> <!--Títol que es mostra a la pestaña del navegadors i en els resultats dels buscadors, utiltizat pel CEO per situar la nostra pàgina web -->
 
         <meta charset="utf-8"> <!--Codificació-->
         <meta name="viewport" content="width=device-width"> <!--Permet configurar l'aspecte i comportament de la web en diferents dispositius-->
@@ -11,7 +11,7 @@
         <meta name="robots" content="index, follow"> <!--Important per Google i altres buscadors, per informar si ha d'indexar la pàgina o no-->
         <meta name="theme-color" content="#09f"> <!--Utilitzat per alguns navegadors(Ex: El color de la part superior de Safari)-->
 
-        <link rel="icon" type="image/png" href="images/logos lenguajes.png"> <!--Permet informar el favicon de la nostra web, si no s'informa es busca per defecte el favicon.icon-->
+        <link rel="icon" type="image/png" href="images/tkn.ico"> <!--Permet informar el favicon de la nostra web, si no s'informa es busca per defecte el favicon.icon-->
 
         <!--OPEN GRAPH-->
 
@@ -21,33 +21,152 @@
 
         <!--CCS-->
 
-        <style>
+        <!-- <style>
             body{
                 background: #438a81;
             }
-        </style>
+        </style> -->
 
     </head>
     <body>
         <header>
-            <h1>Títol: Curs HTML</h1>
-             <!-- COMENTARI -->
+            <h1 hidden>The Kop Noticias</h1>
+            <img src="images/Logo_TKN.png">
+            <section id="fecha-rrss">
+                <p>Jueves 20 de Marzo del 2025</p>
+            </section>
         </header>
         <nav>
-            <a href="#tipos-items">Tipos de Item</a>
-            <a href="#entrada-datos">Registro</a>
+            <a href="#">Inicio</a>
+            <a href="#">Premier League</a>
+            <a href="#">Rumores</a>
+            <a href="#">Previas y Crónicas</a>
+            <a href="#">Ruedas de Prensa</a>
+            <a href="#">FA Cup</a>
+            <a href="#">Plantilla</a>
+            <a href="#">Otras</a>
             <a href="https://www.youtube.com" target="_blank" rel="noreferrer">Youtube</a>
         </nav>
+        <aside id="articulos-opinion">
+            <header>
+                <h2>RECOMENDAMOS</h2>
+            </header>
+            <body>
+                <article>
+                    <p>Artículo de Opinión 1</p>
+                </article>
+                <article>
+                    <p>Artículo de Opinión 2</p>
+                </article>
+                <article>
+                    <p>Artículo de Opinión 3</p>
+                </article>
+                <article>
+                    <p>Artículo de Opinión 4</p>
+                </article>
+            </body>
+        </aside>
         <main>    
-            <p>Aquest tipus de text es tracta d'un <strong>paràgraf</strong> i es defineix amb l'etiqueta p.</p>
-        </main>
-        
-        <aside id="tipos-items">
-            <ul>
-                <li class="row-style">Item 1</li>
-                <li class="row-style">Item 2</li>
-                <li class="row-style">Item 3</li>
-            </ul>
+            <article>
+                <header>
+                    <small>Subtítol de la Noticia 1</small>
+                    <h3>Titular de la Noticia 1</h3>
+                    <section class="info-noticia">
+                        <p>Autor</p>
+                        <p>Data i hora</p>
+                    </section>
+                </header>
+                <p>Això és la <strong>Noticia 1</strong>.</p>
+            </article>
+            <article>
+                <header>
+                    <small>Subtítol de la Noticia 2</small>
+                    <h3>Titular de la Noticia 2</h3>
+                    <section class="info-noticia">
+                        <p>Autor</p>
+                        <p>Data i hora</p>
+                    </section>
+                </header>
+                <p>Això és la <strong>Noticia 2</strong>.</p>
+            </article>
+            <article>
+                <header>
+                    <small>Subtítol de la Crónica</small>
+                    <h3>Crónica</h3>
+                    <section class="info-noticia">
+                        <p>Autor</p>
+                        <p>Data i hora</p>
+                    </section>
+                </header>
+                <p>Això és la una <strong>Crónica</strong>.</p>
+            </article>
+            <article>
+                <header>
+                    <small>Subtítol de la Noticia 3</small>
+                    <h3>Titular de la Noticia 3</h3>
+                    <section class="info-noticia">
+                        <p>Autor</p>
+                        <p>Data i hora</p>
+                    </section>
+                </header>
+                <p>Això és la <strong>Noticia 3</strong>.</p>
+            </article>
+            <article>
+                <header>
+                    <small>Subtítol de la Noticia 4</small>
+                    <h3>Titular de la Noticia 4</h3>
+                    <section class="info-noticia">
+                        <p>Autor</p>
+                        <p>Data i hora</p>
+                    </section>
+                </header>
+                <p>Això és la <strong>Noticia 4</strong>.</p>
+            </article>
+        </main>      
+        <aside id="barra-lateral">
+            <section>
+                <header>
+                    <h4>TKN en vídeo</h4>
+                </header>
+            </section>
+
+            <section>
+                <header>
+                    <h4>Clasificación</h4>
+                </header>
+                <ol>
+                    <li class="row-style">Liverpool</li>
+                    <li class="row-style">Arsenal FC</li>
+                    <li class="row-style">Nottingham Forest</li>
+                </ol>
+            </section>
+
+            <section>
+                <header>
+                    <h4>Equipo de TKN</h4>
+                </header>
+                <article>
+                    <header>
+                        <h5>Albert Quer Cufí</h5>
+                    </header>
+                    <p>Amante del fútbol pero ante todo del Liverpool. In Brendan I Trust. Admin de TKN.</p>
+                    <p><strong>Contacto:</strong> albertq07@hotmail.com</p>
+                </article>
+                <article>
+                    <header>
+                        <h5>Ivan Campos</h5>
+                    </header>
+                    <p>Siguiendo al Liverpool desde Veracruz, México. Afortunado por escribir en TKN y agradecido con Dios por darnos el deporte más bonito del mundo, el fútbol.</p>
+                    <p><strong>Contacto:</strong> Ivan.sg.8@gmail.com</p>
+                </article>
+                <article>
+                    <header>
+                        <h5>Pablo Benítez</h5>
+                    </header>
+                    <p>Pablo 31 años, desde Argentina, ciudad de Rosario, un seguidor incondicional del club de Anfield. Un placer brindar información sobre el club más grande del mundo.</p>
+                    <p><strong>Contacto:</strong> pdfliverpool111@gmail.com</p>
+                </article>
+            </section>
         </aside>
 
         <section id="entrada-datos">
