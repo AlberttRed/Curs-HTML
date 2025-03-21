@@ -169,7 +169,40 @@
             </section>
         </aside>
 
-        <section id="entrada-datos">
+
+        <!--FORMULARI ENTRADA DADES-->
+
+        <form method="post" action="/">
+            <fieldset>
+                <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" placeholder="Albert Quer" required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="969123456" required pattern="[0-9]{9}">
+                </div>
+                <div>
+                    <label for="motivo">Motivo</label>
+                    <select name="motivo" id="motivo">
+                        <option value="1">Trabajo</option>
+                        <option value="2">Duda</option>
+                        <option value="3">Más información</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label>Correo
+                    <input type="email" name="email" placeholder="aquer@iconsl.com">
+                </label>
+                <div>
+                    <label for="terms">¿Aceptas los términos?</label>
+                    <input type="checkbox" id="terms" name="terminos" required>
+                </div>
+            </fieldset>
+            <input type="submit" value="Enviar contacto">
+            <br>
+            <br>
             <input type="date">
             <br>
             <br>
@@ -178,5 +211,12 @@
             <br>
             <img width="250" src="images/logos lenguajes.png">
         </section>
+
+
+
+
+        <footer>
+            Copyright © 2025 - Curso HTML de Minudev
+        </footer>
     </body>
 </html>    
