@@ -67,6 +67,18 @@
             </body>
         </aside>
         <main>    
+            <button id="open_anunci">Abrir anuncio</button>
+            <dialog id="anunci">
+                <h3>¡Eres el visitante nº 10.000!</h3>
+                <p><strong>Enhorabuena!</strong> Has ganado el maravilloso premio de irte a tomar por culo.</p>
+                <button id="close_anunci">Cerrar</button>
+            </dialog>
+            <script>
+                window.open_anunci.addEventListener('click', () => { window.anunci.showModal()})
+                window.close_anunci.addEventListener('click', () => window.anunci.close())
+            </script>
+
+
             <article>
                 <header>
                     <small>Subtítol de la Noticia 1</small>
@@ -128,6 +140,9 @@
                 <header>
                     <h4>TKN en vídeo</h4>
                 </header>
+                <video autoplay muted width="250" src="videos/Badgers.mp4"></video>
+
+            
             </section>
 
             <section>
@@ -200,7 +215,8 @@
                     <input type="checkbox" id="terms" name="terminos" required>
                 </div>
             </fieldset>
-            <input type="submit" value="Enviar contacto">
+            <!--<input type="submit" value="Enviar contacto">-->
+            <button>Enviar contacto</button>
             <br>
             <br>
             <input type="date">
@@ -212,7 +228,30 @@
             <img width="250" src="images/logos lenguajes.png">
         </section>
 
-
+        <section>
+            <datalist id="opciones">
+                <option value="Primera opción"></option>
+                <option value="Segunda opción"></option>
+                <option value="Tercera opción"></option>
+                <option value="Cuarta opción"></option>           
+            </datalist>
+            <label for="options">¿Qué opción quieres seleccionar?</label>
+            <input list="opciones" id="options" name="options">
+            <br>
+            <details>
+                <summary>Quin any es va fundar el Girona?</summary>
+                <p>El Girona es va fundar l'any 1930.</p>
+            </details>
+            <details open>
+                <summary>Qui és el propietari del Girona FC?</summary>
+                <p>Des de el 23 d'agost del 2023, el propietari del Girona és el City Football Group.</p>
+            </details>
+            <details>
+                <summary>Qui és el màxim golejador de la història del Girona?</summary>
+                <p>El màxim golejador històric del Girona es Cristhian Stuani.</p>
+            </details>
+        </section>
+        <br>
 
 
         <footer>
